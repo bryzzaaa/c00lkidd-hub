@@ -1,0 +1,341 @@
+-- // GUI > LUAU \\ --
+-- // VERSION: 0.7 \\ --
+
+-- // SCRIPT ID: {57083ede-5dcc-4f8e-bb49-76e289e2930f} \\ --
+
+
+-- // INSTANCES \\ --
+
+local c00lkiddhub = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local HUBTITLE = Instance.new("TextLabel")
+local Rphoto = Instance.new("ImageLabel")
+local HUBDESC = Instance.new("TextLabel")
+local welcometext = Instance.new("TextLabel")
+local noclip = Instance.new("TextButton")
+local linha1 = Instance.new("Frame")
+local noclippage = Instance.new("Folder")
+local ativartext = Instance.new("TextLabel")
+local ativar = Instance.new("TextButton")
+local desativar = Instance.new("TextButton")
+local Xexit = Instance.new("ImageButton")
+local dep = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+
+-- // PROPERTIES \\ --
+
+c00lkiddhub.Name = "c00lkidd hub"
+c00lkiddhub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+c00lkiddhub.ResetOnSpawn = false
+
+frame.Name = "frame"
+frame.Parent = c00lkiddhub
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+frame.BorderSizePixel = 0
+frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+frame.Size = UDim2.new(0, 450, 0, 300)
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = frame
+
+HUBTITLE.Name = "HUBTITLE"
+HUBTITLE.Parent = frame
+HUBTITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HUBTITLE.BackgroundTransparency = 1.000
+HUBTITLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HUBTITLE.BorderSizePixel = 0
+HUBTITLE.Size = UDim2.new(0, 450, 0, 33)
+HUBTITLE.Font = Enum.Font.FredokaOne
+HUBTITLE.Text = "c00lkidd hub"
+HUBTITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+HUBTITLE.TextScaled = true
+HUBTITLE.TextSize = 14.000
+HUBTITLE.TextWrapped = true
+
+Rphoto.Name = "Rphoto"
+Rphoto.Parent = frame
+Rphoto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rphoto.BackgroundTransparency = 1.000
+Rphoto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rphoto.BorderSizePixel = 0
+Rphoto.Position = UDim2.new(0.113333337, 0, 0.00999999978, 0)
+Rphoto.Size = UDim2.new(0, 28, 0, 27)
+Rphoto.Image = "rbxassetid://18965146251"
+
+HUBDESC.Name = "HUBDESC"
+HUBDESC.Parent = frame
+HUBDESC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HUBDESC.BackgroundTransparency = 1.000
+HUBDESC.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HUBDESC.BorderSizePixel = 0
+HUBDESC.Position = UDim2.new(0.606666684, 0, 0, 0)
+HUBDESC.Size = UDim2.new(0, 170, 0, 15)
+HUBDESC.Font = Enum.Font.FredokaOne
+HUBDESC.Text = "made by !@#$$%¨"
+HUBDESC.TextColor3 = Color3.fromRGB(255, 255, 255)
+HUBDESC.TextScaled = true
+HUBDESC.TextSize = 14.000
+HUBDESC.TextWrapped = true
+
+welcometext.Name = "welcometext"
+welcometext.Parent = frame
+welcometext.AnchorPoint = Vector2.new(0.5, 0.5)
+welcometext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+welcometext.BackgroundTransparency = 1.000
+welcometext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+welcometext.BorderSizePixel = 0
+welcometext.Position = UDim2.new(0.5, 0, 0.5, 0)
+welcometext.Size = UDim2.new(0, 200, 0, 50)
+welcometext.Visible = false
+welcometext.Font = Enum.Font.Ubuntu
+welcometext.Text = "Welcome."
+welcometext.TextColor3 = Color3.fromRGB(255, 255, 255)
+welcometext.TextScaled = true
+welcometext.TextSize = 14.000
+welcometext.TextWrapped = true
+
+noclip.Name = "noclip"
+noclip.Parent = frame
+noclip.BackgroundColor3 = Color3.fromRGB(81, 0, 0)
+noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BorderSizePixel = 0
+noclip.Position = UDim2.new(0.728888869, 0, 0.109999999, 0)
+noclip.Size = UDim2.new(0, 108, 0, 30)
+noclip.Font = Enum.Font.Unknown
+noclip.Text = "Atravessar parede"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclip.TextSize = 14.000
+
+linha1.Name = "linha1"
+linha1.Parent = frame
+linha1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+linha1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+linha1.BorderSizePixel = 0
+linha1.Position = UDim2.new(0.713333309, 0, 0.100000001, 0)
+linha1.Size = UDim2.new(0, -2, 0, 270)
+
+noclippage.Name = "noclippage"
+noclippage.Parent = frame
+
+ativartext.Name = "ativartext"
+ativartext.Parent = noclippage
+ativartext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ativartext.BackgroundTransparency = 1.000
+ativartext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ativartext.BorderSizePixel = 0
+ativartext.Position = UDim2.new(0.0511111096, 0, 0.109999999, 0)
+ativartext.Size = UDim2.new(0, 289, 0, 30)
+ativartext.Visible = false
+ativartext.Font = Enum.Font.Cartoon
+ativartext.Text = "Ativar"
+ativartext.TextColor3 = Color3.fromRGB(255, 255, 255)
+ativartext.TextScaled = true
+ativartext.TextSize = 14.000
+ativartext.TextWrapped = true
+
+ativar.Name = "ativar"
+ativar.Parent = noclippage
+ativar.BackgroundColor3 = Color3.fromRGB(81, 0, 0)
+ativar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ativar.BorderSizePixel = 0
+ativar.Position = UDim2.new(0.0155555559, 0, 0.466666669, 0)
+ativar.Size = UDim2.new(0, 123, 0, 50)
+ativar.Visible = false
+ativar.Font = Enum.Font.Cartoon
+ativar.Text = "Ativar"
+ativar.TextColor3 = Color3.fromRGB(255, 255, 255)
+ativar.TextScaled = true
+ativar.TextSize = 14.000
+ativar.TextWrapped = true
+
+desativar.Name = "desativar"
+desativar.Parent = noclippage
+desativar.BackgroundColor3 = Color3.fromRGB(81, 0, 0)
+desativar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+desativar.BorderSizePixel = 0
+desativar.Position = UDim2.new(0.362222224, 0, 0.466666669, 0)
+desativar.Size = UDim2.new(0, 123, 0, 50)
+desativar.Visible = false
+desativar.Font = Enum.Font.Cartoon
+desativar.Text = "desativar"
+desativar.TextColor3 = Color3.fromRGB(255, 255, 255)
+desativar.TextScaled = true
+desativar.TextSize = 14.000
+desativar.TextWrapped = true
+
+Xexit.Name = "Xexit"
+Xexit.Parent = frame
+Xexit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Xexit.BackgroundTransparency = 1.000
+Xexit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Xexit.BorderSizePixel = 0
+Xexit.Position = UDim2.new(0.0511111096, 0, 0.00999999978, 0)
+Xexit.Size = UDim2.new(0, 28, 0, 27)
+Xexit.Image = "rbxassetid://7436812392"
+
+dep.Name = "dep"
+dep.Parent = c00lkiddhub
+dep.AnchorPoint = Vector2.new(0.5, 0)
+dep.BackgroundColor3 = Color3.fromRGB(255, 2, 2)
+dep.BorderColor3 = Color3.fromRGB(0, 0, 0)
+dep.BorderSizePixel = 0
+dep.Position = UDim2.new(0.5, 0, 1, -123)
+dep.Size = UDim2.new(0, 170, 0, 23)
+dep.Visible = false
+dep.Font = Enum.Font.SourceSansBold
+dep.Text = "c00lkid hub"
+dep.TextColor3 = Color3.fromRGB(255, 255, 255)
+dep.TextScaled = true
+dep.TextSize = 14.000
+dep.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 11111)
+UICorner_2.Parent = dep
+
+-- // SCRIPTS \\ -- 
+
+local function FWYOCIL_fake_script() -- frame.LocalScript 
+	local script = Instance.new('LocalScript', frame)
+
+	local frame = script.Parent
+	
+	frame.HUBDESC.Visible = false
+	frame.HUBTITLE.Visible = false
+	frame.Rphoto.Visible = false
+	frame.welcometext.Visible = true
+	frame.linha1.Visible = false
+	frame.Xexit.Visible = false
+	frame.noclip.Visible = false
+	frame.welcometext.TextTransparency = 1
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.9
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.8
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.7
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.6
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.5
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.4
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.3
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.2
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.1
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0
+	wait(1)
+	frame.welcometext.TextTransparency = 0.1
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.2
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.3
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.4
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.5
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.6
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.7
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.8
+	wait(0.1)
+	frame.welcometext.TextTransparency = 0.9
+	wait(0.1)
+	frame.welcometext.TextTransparency = 1
+	wait(1)
+	frame.HUBDESC.Visible = true
+	frame.HUBTITLE.Visible = true
+	frame.Rphoto.Visible = true
+	frame.welcometext.Visible = false
+	frame.linha1.Visible = true
+	frame.Xexit.Visible = true
+	frame.noclip.Visible = true
+end
+coroutine.wrap(FWYOCIL_fake_script)()
+local function EAWSDD_fake_script() -- noclip.LocalScript 
+	local script = Instance.new('LocalScript', noclip)
+
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		frame.noclippage.ativar.Visible = true
+		frame.noclippage.ativartext.Visible = true
+		frame.noclippage.desativar.Visible = true
+	end)
+end
+coroutine.wrap(EAWSDD_fake_script)()
+local function BXABISJ_fake_script() -- noclippage.LocalScript 
+	local script = Instance.new('LocalScript', noclippage)
+
+	local player = game.Players.LocalPlayer
+	local ativar = script.Parent:WaitForChild("ativar")
+	local desativar = script.Parent:WaitForChild("desativar")
+	
+	local noclipOn = false
+	
+	local function setNoclip(enable)
+		local character = player.Character or player.CharacterAdded:Wait()
+		noclipOn = enable
+		for _, part in ipairs(character:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.CanCollide = not enable
+			end
+		end
+	end
+	
+	ativar.MouseButton1Click:Connect(function()
+		setNoclip(true)
+	end)
+	
+	desativar.MouseButton1Click:Connect(function()
+		setNoclip(false)
+	end)
+	
+	game:GetService("RunService").Stepped:Connect(function()
+		if noclipOn then
+			local character = player.Character
+			if character then
+				for _, part in ipairs(character:GetDescendants()) do
+					if part:IsA("BasePart") then
+						part.CanCollide = false
+					end
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(BXABISJ_fake_script)()
+local function LQQEN_fake_script() -- Xexit.LocalScript 
+	local script = Instance.new('LocalScript', Xexit)
+
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		frame.Visible = false
+		frame.Parent.dep.Visible = true
+	end)
+end
+coroutine.wrap(LQQEN_fake_script)()
+local function SKQY_fake_script() -- dep.LocalScript 
+	local script = Instance.new('LocalScript', dep)
+
+	local depp = script.Parent
+	local frame = depp.Parent.frame
+	
+	depp.MouseButton1Click:Connect(function()
+		frame.Visible = true
+		depp.Visible = false
+	end)
+end
+coroutine.wrap(SKQY_fake_script)()
